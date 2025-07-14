@@ -130,15 +130,6 @@ Raix.configure do |config|
 end
 ```
 
-### Custom Prompts
-
-Modify `prompts.yaml` to customize agent behavior:
-
-```yaml
-system_prompt: |
-  Your custom system instructions here...
-```
-
 ## Examples
 
 ### Web Research
