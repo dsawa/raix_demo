@@ -55,7 +55,7 @@ class AgentDemo
     puts "Type 'exit' or 'quit' to stop"
     puts "Type 'help' for available commands"
 
-    agent = Agent.build
+    agent = Agent.build(openai: 'gpt-4o')
 
     loop do
       print "\n> "
