@@ -180,16 +180,16 @@ bundle exec rubocop
 
 ## Comparison with Python Version
 
-As mentioned, this Ruby implementation mirrors the functionality of the Python smolagents template. Below is a quick reference for equivalent features:
+As mentioned, this Ruby implementation mirrors the functionality of the Python smlagents template. Below is a quick reference for equivalent features:
 
-| Feature          | Python (smolagents)    | Ruby (RAIX)                                      |
-| ---------------- | ---------------------- | ------------------------------------------------ |
-| Tool Definition  | `@tool` decorator      | `function` DSL method                            |
-| Agent Creation   | `CodeAgent` class      | Include `ChatCompletion` + `FunctionDispatch`    |
-| Prompt Templates | YAML + PromptTemplates | YAML + PromptDeclarations                        |
-| Tool Execution   | Automatic dispatch     | Automatic dispatch with `dispatch_tool_function` |
-| Streaming        | Built-in               | Available via RAIX streaming                     |
-| Model Support    | HuggingFace + OpenAI   | OpenRouter + OpenAI                              |
+| Feature          | Python (smolagents)  | Ruby (RAIX)                                      |
+| ---------------- | -------------------- | ------------------------------------------------ |
+| Tool Definition  | `@tool` decorator    | `function` DSL method                            |
+| Agent Creation   | `CodeAgent` class    | Include `ChatCompletion` + `FunctionDispatch`    |
+| Prompt Templates | `CodeAgent` supports | `PromptDeclarations` probably could help         |
+| Tool Execution   | Automatic dispatch   | Automatic dispatch with `dispatch_tool_function` |
+| Streaming        | Built-in             | Available via RAIX streaming                     |
+| Model Support    | HuggingFace + OpenAI | OpenRouter + OpenAI                              |
 
 ## Dependencies
 
